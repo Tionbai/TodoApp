@@ -1,0 +1,28 @@
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 75px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  text-indent: 10px;
+  color: var(--darktext);
+}
+
+.Header__title, .Header__subtitle {
+  height: 50%;
+}
+
+.Header__title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.Header__subtitle {
+  font-weight: 300;
+  font-size: 16px;
+}

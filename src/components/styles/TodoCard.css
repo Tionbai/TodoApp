@@ -1,0 +1,56 @@
+.Card {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  margin: 1px;
+  padding: 5px 5px 5px 0px;
+  background: white;
+  border: 0.5px solid var(--blue);
+}
+
+.Card--completed {
+  text-decoration: var(--darkblue) double line-through;
+}
+
+.Card--isDragging {
+  background-color: var(--lightbackground);
+  user-select: none;
+}
+
+.Card__check, .Card__delete--show {
+  width: 50px;
+  height: 100%;
+  font-size: 20px;
+}
+
+.Card__description {
+  flex: 1;
+  width: 90%;
+  text-align: left;
+  font-size: 16px;
+  word-wrap: break-word;
+  color: var(--darkblue);
+}
+
+.Card__check {
+  color: var(--blue);
+}
+
+.Card__check:hover {
+  color: var(--darkblue);
+}
+
+.Card__delete--show {
+  color: rgb(235, 84, 96);
+  margin-right: -5px;
+}
+
+.Card__delete--show:hover {
+  color: rgb(197, 43, 56);
+}
+
+.Card__delete--hide {
+  display: none;
+}
